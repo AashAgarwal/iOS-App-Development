@@ -20,27 +20,37 @@ final class ToDoListViewModel {
     
     func getLists() {
         guard shouldGetLists else { return }
-        Lists = [List(name: "MainList",
+        
+        Lists = [List(name: "To do List",
                               subordinates: getSubLists())]
         shouldGetLists = false
     }
     
     private func getSubLists() -> [List] {
-        let subList1 = List(name: "Do Laundry", subordinates: getLaundrySubordinates())
-        let subList2 = List(name: "Make some food", subordinates: getFoodSubordinates())
-        return [subList1, subList2]
+        let subList1 = List(name: "Do Laundry", subordinates: getSubListsFunction())
+        let subList2 = List(name: "Take my dog for a walk",
+                      subordinates: getSubListsFunction())
+        let subList3 = List(name: "Go to gym",
+                      subordinates: getSubListsFunction())
+        let subList4 = List(name: "Make some food",
+                      subordinates: getSubListsFunction())
+        let subList5 = List(name: "Go out for a walk",
+                      subordinates: getSubListsFunction())
+        let subList6 = List(name: "Water my plants",
+                      subordinates: getSubListsFunction())
+        let subList7 = List(name: "Buy a new game",
+                      subordinates: getSubListsFunction())
+        let subList8 = List(name: "Prepare shopping list",
+                      subordinates: getSubListsFunction())
+        let subList9 = List(name: "Check my bank account",
+                      subordinates: getSubListsFunction())
+        return [subList1, subList2, subList3, subList4, subList5, subList6, subList7, subList8, subList9]
     }
     
-    private func getLaundrySubordinates() -> [List] {
-        let sub1 = List(name: "Take dirty clothes", subordinates: [])
-        let sub2 = List(name: "Take laundry detergent", subordinates: [])
-        return [sub1, sub2]
-    }
-    
-    private func getFoodSubordinates() -> [List] {
-        let sub1 = List(name: "Chop vegetables", subordinates: [])
-        let sub2 = List(name: "Start Cooking", subordinates: [])
-        return [sub1, sub2]
+    private func getSubListsFunction() -> [List] {
+        let subFunction1 = List(name: "update", subordinates: [])
+        let subFunction2 = List(name: "delete", subordinates: [])
+        return [subFunction1, subFunction2]
     }
     
     func getNumberOfLists() -> Int {

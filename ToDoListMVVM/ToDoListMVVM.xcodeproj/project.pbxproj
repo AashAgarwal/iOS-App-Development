@@ -7,28 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB3CA38C22F179CD00909974 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3CA38B22F179CD00909974 /* List.swift */; };
 		EBABA03F22E2283A0071F279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABA03E22E2283A0071F279 /* AppDelegate.swift */; };
 		EBABA04122E2283A0071F279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABA04022E2283A0071F279 /* ViewController.swift */; };
 		EBABA04422E2283A0071F279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBABA04222E2283A0071F279 /* Main.storyboard */; };
-		EBABA04722E2283A0071F279 /* ToDoListMVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBABA04522E2283A0071F279 /* ToDoListMVVM.xcdatamodeld */; };
 		EBABA04922E2283B0071F279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBABA04822E2283B0071F279 /* Assets.xcassets */; };
 		EBABA04C22E2283B0071F279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBABA04A22E2283B0071F279 /* LaunchScreen.storyboard */; };
-		EBABA05422E231DA0071F279 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABA05322E231DA0071F279 /* List.swift */; };
-		EBABA05622E232140071F279 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABA05522E232140071F279 /* ListController.swift */; };
 		EBABA05822E234DE0071F279 /* ToDoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBABA05722E234DE0071F279 /* ToDoListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB3CA38B22F179CD00909974 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		EBABA03B22E2283A0071F279 /* ToDoListMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBABA03E22E2283A0071F279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBABA04022E2283A0071F279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBABA04322E2283A0071F279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EBABA04622E2283A0071F279 /* ToDoListMVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListMVVM.xcdatamodel; sourceTree = "<group>"; };
 		EBABA04822E2283B0071F279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBABA04B22E2283B0071F279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBABA04D22E2283B0071F279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EBABA05322E231DA0071F279 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
-		EBABA05522E232140071F279 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		EBABA05722E234DE0071F279 /* ToDoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,14 +60,12 @@
 			children = (
 				EBABA03E22E2283A0071F279 /* AppDelegate.swift */,
 				EBABA04022E2283A0071F279 /* ViewController.swift */,
+				EB3CA38B22F179CD00909974 /* List.swift */,
 				EBABA05722E234DE0071F279 /* ToDoListViewModel.swift */,
-				EBABA05322E231DA0071F279 /* List.swift */,
-				EBABA05522E232140071F279 /* ListController.swift */,
 				EBABA04222E2283A0071F279 /* Main.storyboard */,
 				EBABA04822E2283B0071F279 /* Assets.xcassets */,
 				EBABA04A22E2283B0071F279 /* LaunchScreen.storyboard */,
 				EBABA04D22E2283B0071F279 /* Info.plist */,
-				EBABA04522E2283A0071F279 /* ToDoListMVVM.xcdatamodeld */,
 			);
 			path = ToDoListMVVM;
 			sourceTree = "<group>";
@@ -148,9 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBABA05822E234DE0071F279 /* ToDoListViewModel.swift in Sources */,
-				EBABA04722E2283A0071F279 /* ToDoListMVVM.xcdatamodeld in Sources */,
-				EBABA05622E232140071F279 /* ListController.swift in Sources */,
-				EBABA05422E231DA0071F279 /* List.swift in Sources */,
+				EB3CA38C22F179CD00909974 /* List.swift in Sources */,
 				EBABA04122E2283A0071F279 /* ViewController.swift in Sources */,
 				EBABA03F22E2283A0071F279 /* AppDelegate.swift in Sources */,
 			);
@@ -352,19 +344,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		EBABA04522E2283A0071F279 /* ToDoListMVVM.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				EBABA04622E2283A0071F279 /* ToDoListMVVM.xcdatamodel */,
-			);
-			currentVersion = EBABA04622E2283A0071F279 /* ToDoListMVVM.xcdatamodel */;
-			path = ToDoListMVVM.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = EBABA03322E2283A0071F279 /* Project object */;
 }

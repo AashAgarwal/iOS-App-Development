@@ -13,6 +13,7 @@
 		EBBF0E3022ED8019007C304C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBF0E2F22ED8019007C304C /* Assets.xcassets */; };
 		EBBF0E3322ED8019007C304C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBF0E3122ED8019007C304C /* LaunchScreen.storyboard */; };
 		EBBF0E3B22ED81EF007C304C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBF0E3A22ED81EF007C304C /* CollectionViewCell.swift */; };
+		EBBF0E3D22ED9685007C304C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBF0E3C22ED9685007C304C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EBBF0E3222ED8019007C304C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBBF0E3422ED8019007C304C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBBF0E3A22ED81EF007C304C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		EBBF0E3C22ED9685007C304C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EBBF0E2822ED8018007C304C /* AppDelegate.swift */,
 				EBBF0E2A22ED8018007C304C /* ViewController.swift */,
 				EBBF0E2C22ED8018007C304C /* Main.storyboard */,
+				EBBF0E3C22ED9685007C304C /* DetailViewController.swift */,
 				EBBF0E3A22ED81EF007C304C /* CollectionViewCell.swift */,
 				EBBF0E2F22ED8019007C304C /* Assets.xcassets */,
 				EBBF0E3122ED8019007C304C /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				EBBF0E2B22ED8018007C304C /* ViewController.swift in Sources */,
 				EBBF0E2922ED8018007C304C /* AppDelegate.swift in Sources */,
 				EBBF0E3B22ED81EF007C304C /* CollectionViewCell.swift in Sources */,
+				EBBF0E3D22ED9685007C304C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
