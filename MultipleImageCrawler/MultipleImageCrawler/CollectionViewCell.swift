@@ -13,13 +13,18 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
     func getImage(urlImage: String) {
-        guard let url = URL(string: urlImage) else {return}
+        //self.frame.size.width = 125
+        guard let url = URL(string: urlImage) else { return }
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             
-            guard let data = data else { return }
+            guard let data = data else {
+                print("Error at image")
+                return
+            }
             DispatchQueue.main.async {
                 self.imageView.image = UIImage(data: data)
             }
+           
             }.resume()
     }
 }

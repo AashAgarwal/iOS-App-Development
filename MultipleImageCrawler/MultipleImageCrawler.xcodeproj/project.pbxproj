@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBA1250F22F2976C00D4C4E0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1250E22F2976C00D4C4E0 /* TableViewCell.swift */; };
 		EBBF0E2922ED8018007C304C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBF0E2822ED8018007C304C /* AppDelegate.swift */; };
 		EBBF0E2B22ED8018007C304C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBF0E2A22ED8018007C304C /* ViewController.swift */; };
 		EBBF0E2E22ED8018007C304C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBF0E2C22ED8018007C304C /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EBA1250E22F2976C00D4C4E0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		EBBF0E2522ED8018007C304C /* MultipleImageCrawler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleImageCrawler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBF0E2822ED8018007C304C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBBF0E2A22ED8018007C304C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		EBBF0E2722ED8018007C304C /* MultipleImageCrawler */ = {
 			isa = PBXGroup;
 			children = (
+				EBA1250E22F2976C00D4C4E0 /* TableViewCell.swift */,
 				EBBF0E2822ED8018007C304C /* AppDelegate.swift */,
 				EBBF0E2A22ED8018007C304C /* ViewController.swift */,
 				EBBF0E2C22ED8018007C304C /* Main.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBA1250F22F2976C00D4C4E0 /* TableViewCell.swift in Sources */,
 				EBBF0E2B22ED8018007C304C /* ViewController.swift in Sources */,
 				EBBF0E2922ED8018007C304C /* AppDelegate.swift in Sources */,
 				EBBF0E3B22ED81EF007C304C /* CollectionViewCell.swift in Sources */,
