@@ -68,7 +68,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //if !self.mySectionswithHits.isEmpty {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CollectionViewCell  {
     
-        cell.backgroundColor = .blue
+        cell.backgroundColor = .red
         //for section in 0...indexPath.section {
         //print(indexPath.section, " /section/ ")
         //print(mySectionswithHits[indexPath.section].count)
