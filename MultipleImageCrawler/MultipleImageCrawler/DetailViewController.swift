@@ -26,7 +26,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         guard let urlString = details?.largeImageURL, let url = URL(string: urlString) else { return }
-        
+        print(urlString)
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             
             guard let data = data else { return }

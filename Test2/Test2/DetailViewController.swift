@@ -33,7 +33,7 @@ class DetailViewController: UIViewController {
         airTime.text = "Air Time: \(episodeDetail!.airtime)"
         Season.text = "Season: \(episodeDetail!.season)"
         episodeNumber.text = "Episode Number: \(episodeDetail!.episodeNumber)"
-        Sumarry.text = "Summary: \(episodeDetail!.summary)"
+        Sumarry.text = "Summary: \(episodeDetail!.summary.dropFirst(3).dropLast(4))"
         
     }
     

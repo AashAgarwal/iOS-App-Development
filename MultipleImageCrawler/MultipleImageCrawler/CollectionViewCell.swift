@@ -12,6 +12,11 @@ class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.imageView.image = UIImage.init(named: "image")
+    }
+    
     func getImage(urlImage: String) {
         //self.frame.size.width = 125
         guard let url = URL(string: urlImage) else { return }
