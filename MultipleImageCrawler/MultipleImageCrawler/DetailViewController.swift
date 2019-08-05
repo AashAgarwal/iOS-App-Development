@@ -40,19 +40,5 @@ class DetailViewController: UIViewController {
         likesLabel.text = " Likes: \(details!.likes)"
         commentsLabel.text = " Comments: \(details!.comments)"
 
-
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

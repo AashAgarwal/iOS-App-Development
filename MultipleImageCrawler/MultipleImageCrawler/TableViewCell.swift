@@ -29,6 +29,8 @@ class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var label: UILabel!
+    
     var mySectionswithHits: Array<[hits]> = []
     weak var delegate: MainDelegate?
     
@@ -44,23 +46,13 @@ class TableViewCell: UITableViewCell {
             if let myHits = try? JSONDecoder().decode(TheKeys.self, from: data!) {
                 self.mySectionswithHits.append(myHits.hits ?? [])
                 DispatchQueue.main.async {
-                    print(self.mySectionswithHits)
                     self.collectionView.reloadData()
+                    self.label.text = "\(urlString.dropFirst(66).dropLast(29))"
                 }
             } else {
                 print("Error")
             }
-            
-            
             }.resume()
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-    
-    func setCollectionViewDataSourceDelegate(dataSource: UICollectionViewDataSource,  dataDelegate: UICollectionViewDelegate, forRow: Int) {
-        
     }
 }
 
@@ -77,9 +69,8 @@ extension TableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         if mySectionswithHits.count > 0 {
-             let hits_arr = self.mySectionswithHits[0] as? [hits]
-            let hits_obj = hits_arr?[indexPath.row] as? hits
-             print(hits_obj?.largeImageURL)
+            let hits_arr = self.mySectionswithHits[0] as? [hits]
+            let hits_obj = hits_arr?[indexPath.row]
             
             cell.getImage(urlImage: hits_obj?.largeImageURL ?? "")
         }
@@ -89,9 +80,8 @@ extension TableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if mySectionswithHits.count > 0 {
             let hits_arr = self.mySectionswithHits[0] as? [hits]
-            let hits_obj = hits_arr?[indexPath.row] as! hits
-            print(hits_obj)
-            self.delegate?.didTappedOnImage(hits_obj)
+            let hits_obj = hits_arr?[indexPath.row]
+            self.delegate?.didTappedOnImage(hits_obj!)
         }
     }
 }

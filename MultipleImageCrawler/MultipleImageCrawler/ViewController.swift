@@ -8,7 +8,7 @@
 
 import UIKit
 
-var arrUrlString = ["https://pixabay.com/api/?key=13136960-c0be6b330d714adcabffef94e&q=earthquake&image_type=photo&pretty=true", "https://pixabay.com/api/?key=13136960-c0be6b330d714adcabffef94e&q=orange&image_type=photo&pretty=true", "https://pixabay.com/api/?key=13136960-c0be6b330d714adcabffef94e&q=joke&image_type=photo&pretty=true", "https://pixabay.com/api/?key=13136960-c0be6b330d714adcabffef94e&q=time&image_type=photo&pretty=true", "https://pixabay.com/api/?key=13136960-c0be6b330d714adcabffef94e&q=decision&image_type=photo&pretty=true"]
+var arrUrlString = ["https://pixabay.com/api/?key=13136960-c0be6b330d714adcabffef94e&q=Earthquake&image_type=photo&pretty=true", "https://pixabay.com/api/?key=13136960-c0be6b330d714adcabffef94e&q=Orange&image_type=photo&pretty=true", "https://pixabay.com/api/?key=13136960-c0be6b330d714adcabffef94e&q=Joke&image_type=photo&pretty=true", "https://pixabay.com/api/?key=13136960-c0be6b330d714adcabffef94e&q=Time&image_type=photo&pretty=true", "https://pixabay.com/api/?key=13136960-c0be6b330d714adcabffef94e&q=Decision&image_type=photo&pretty=true"]
 
 class ViewController: UIViewController {
 
@@ -41,11 +41,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 extension ViewController: MainDelegate {
     
     func didTappedOnImage(_ hitsData: hits) {
-        print(hitsData)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let detailViewController = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         detailViewController.details = hitsData
-        //print(detailViewController)
         navigationController?.pushViewController(detailViewController, animated: true)
     }
 }

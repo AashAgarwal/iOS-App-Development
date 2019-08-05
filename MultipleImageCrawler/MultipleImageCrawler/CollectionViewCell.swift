@@ -18,7 +18,6 @@ class CollectionViewCell: UICollectionViewCell {
     }
     
     func getImage(urlImage: String) {
-        //self.frame.size.width = 125
         guard let url = URL(string: urlImage) else { return }
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             
